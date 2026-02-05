@@ -84,7 +84,7 @@ nav li a{
 /* Main style */
 main{
     max-width: 1440px;
-    margin: 0 auto;
+    margin: 70px auto;
 }
 
 .teams-container{
@@ -122,14 +122,21 @@ main{
     font-weight: 600px;
 }
 
+.teams-description{
+    color: #727272;
+}
+
 
 /* Responsive mobile device */
 @media screen and (max-width: 576px) {
     header{
         padding: 20px;
     }
-    nav{
+    nav, .teams-container{
         flex-direction: column;
+    }
+    .teams-image-container{
+        grid-template-columns: repeat(1, 1fr);
     }
 }
 
@@ -139,7 +146,7 @@ main{
     header{
         padding: 50px;
     }
-    nav{
+    nav, .teams-container{
         flex-direction: column;
     }
 }
